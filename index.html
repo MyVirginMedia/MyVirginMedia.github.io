@@ -1,0 +1,214 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Virgin Media | Sign in to My Virgin Media</title>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">
+    <link href="../assets/css/signin.css" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="https://www.google.com/recaptcha/api.js?hl=en-GB" async defer></script>
+</head>
+<body class="sso-body">
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+            //js test for SSO backend validation
+            var form = document.getElementById('login');
+            form.jsEnabled.value = "true";
+        });
+        
+        function showHelp(helpLink, width, height) {
+            var windowName = "help";
+            var windowWidth     = width;
+            var windowHeight    = height;
+            var statusBar       = "no";
+            var scrollable      = "yes";
+            var location        = "no";
+            var windowProperties = "width=" + windowWidth + ",height=" + windowHeight + ",status=" + statusBar + ",scrollbars=" + scrollable + ",location=" + location;
+            window.open(helpLink, windowName, windowProperties);
+        }
+    </script>
+    
+	
+	   <div class="container login-container">
+	
+	<!--SSO-forms-->
+    <div class="login-form-area">
+            <form class="form-signin" id="login" action="/vm_sso/idp/login.action" method="post">
+                <h2 class="">Sign in</h2>
+                	<noscript>
+        <div class="message warning">
+            <p>JavaScript is disabled in your browser.<br/>Please enable JavaScript, then close all browser windows and sign in again.<br/><a href="http://www.virginmedia.com/help/activation/cookies_javascript_disabled.php" title="Help with JavaScript and cookies" target="_blank">Find out how to enable JavaScript.</a></p>
+        </div>
+    </noscript>
+	<!-- Page error Div -->
+	<!--  div id="loginError"></div-->
+	
+				<div class="form-group curActive">
+                	<label for="username" class="">Username</label>
+                	<input type="email" id="username" class="form-control signin-email" placeholder="Email address" required autofocus id="username" name="username" tabindex="1" autocomplete="on" value=''>
+                    <span class="icon-clear"></span>
+                	<span class="icon-error">
+                        <i class="fa fa-times"></i>
+                    </span>
+                     <span class="success-message">
+                        <i class="fa fa-check"></i> 
+                     </span>
+                	<div class="hint">Your My Virgin Media email address</div>
+				</div>
+				<a target="_blank" href="https://my.virginmedia.com/forgot-details/username" class="form-link hidden-xs">Forgotten your username?</a>
+				<div class="form-group">
+                	<label for="password" class="">Password</label>
+                	<input type="password" id="password" name="password" class="form-control" tabindex="2" placeholder="Password" required autocomplete="on">
+                    <span class="icon-clear"></span>
+                    <span class="icon-error-pwd">
+                        <i class="fa fa-times"></i>
+                    </span>
+                     <span class="success-message-pwd">
+                        <i class="fa fa-check"></i> 
+                     </span>
+                	<div class="hint">Your password is between 6 and 10 characters, begins with a letter and contains a number</div>
+                </div>
+                <a target="_blank" href="https://my.virginmedia.com/forgot-details/password" class="form-link hidden-xs">Forgotten your password?</a>
+                <!-- <div class="form-group"></div> -->  <!-- ReCAPTCHA-->
+                
+                
+                
+                <div class="form-group">
+                	<button class="btn btn-primary btn-signin" type="submit" tabindex="3">Sign in</button>
+            		<input type="hidden" name="jsEnabled" value="false" />
+                </div>
+                <div class="form-link visible-xs-inline">Forgotten your&nbsp;<a target="_blank" href="https://my.virginmedia.com/forgot-details/username">username</a>&nbsp;or&nbsp;<a target="_blank" href="https://my.virginmedia.com/forgot-details/password">password</a>?</div>
+            </form>
+
+            <p class="info-text">
+            	If you&#39;re already a Virgin Media customer but don&#39;t have a My Virgin Media account, you can register now.  It only takes a minute.&nbsp;<a target="_blank" href="https://my.virginmedia.com/create-profile/register">Register now</a>
+            </p>
+        </div>
+        <div class="greetings-area hidden-xs">
+        	<h2>Sign in by entering your username &#38; password.</h2>
+        	<ul>
+        		<li><i class="fa fa-user"></i></li>
+        		<li><i class="fa fa-envelope"></i></li>
+        		<li><i class="fa fa-support"></i></li>
+        		<li><i class="fa fa-file-text"></i></li>
+        		<li><i class="fa fa-gift"></i></li>                
+        		<li><img class="tv-wings" src="../assets/images/tv-wing.png"></li>
+            </ul>
+        	<div class="clear"></div>
+        	<p class="greetings-desc">Your username is usually the email address that you gave us when you registered for My Virgin Media.</p>
+        	<p class="greetings-desc">Your password is between 6 and 10 characters, begins with a letter and contains a number.</p>
+        </div>
+    
+		</div>
+		<!-- /container -->
+    	<!-- Latest compiled and minified JavaScript -->
+    	<script src="../assets/js/bootstrap.min.js"></script>
+    	<script type="text/javascript" src="../assets/js/script.js"></script>
+     
+        
+        
+        
+            
+            
+            
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+	<!--  SiteCatalyst code version: H.19.3.
+	
+	Copyright 1997-2009 Omniture, Inc. More info available at
+	
+	http://www.omniture.com  -->
+	<script language="JavaScript" type="text/javascript" src="../js/s_code_customerprod.js"></script>
+	
+	<script language="JavaScript" type="text/javascript">
+	/* STANDARD VARIABLES */
+	s.pageName = "MyVM login sign in";
+	s.channel = "MyVM";
+	s.prop1 = "SelfServe";
+	s.prop2 = "sso";
+	s.prop3 = "sso VMPortal";
+	s.prop4 = "content page";
+	s.prop30 = "";
+	
+	/* HIERARCHY VARIABLE */
+	s.hier1 = "MyVM:SelfServe:login:sign in";
+	</script>
+	
+	<script language="JavaScript" type="text/javascript"><!-- 
+	var s_code=s.t();if(s_code)document.write(s_code)
+	
+	/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+	if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+	// --></script><noscript><a href="https://www.omniture.com" title="Web Analytics"><img src="https://virginmedia.112.2o7.net/b/ss/virginmediacustomerprod/1/H.19.3--NS/0" height="1" width="1" border="0" /></a></noscript>
+	
+	<!-- /DO NOT REMOVE/ -->
+	<!--  End SiteCatalyst code version: H.19.3.  -->
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+	<script language="JavaScript" type="text/javascript" src="../js/VisitorAPI.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../js/AppMeasurement.js"></script>
+	
+	<script language="JavaScript" type="text/javascript"><!-- 
+	s.pageName="identity/vm_sso/login-page"
+	s.hier1="D=pageName"
+	s.channel="cable"
+	s.prop1="identity"
+	s.prop2="identity/vm_sso"
+	s.prop3="D=pageName"
+	s.prop4="D=pageName"
+	s.prop27="https://identity.virginmedia.com/vm_sso/"
+	s.prop29="D=c27"
+	var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+
+
+    </body>
+</html>
